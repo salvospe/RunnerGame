@@ -1,0 +1,70 @@
+using UnityEngine.UI;
+using UnityEngine.Audio;
+using System;
+using UnityEngine;
+
+
+public class AudioManager : MonoBehaviour
+{
+    public Sound[] sounds;
+
+    public static AudioManager instance;
+
+    public GameObject completeLevelUI;
+    void Awake()
+    {
+        completeLevelUI = GameObject.Find("LevelComplete");
+        if (instance == null)
+            instance = this;
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+            DontDestroyOnLoad(gameObject);
+
+        foreach (Sound s in sounds)
+        {
+            s.source = gameObject.AddComponent<AudioSource>();
+            s.source.clip = s.clip;
+            s.source.volume = s.volume;
+            s.source.pitch = s.pitch;
+            s.source.loop = s.loop;
+        }
+    }
+
+    // Update is called once per frame
+    public void Play (string name)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null)
+        {
+            Debug.LogWarning("Sound: " + name + " not found!");
+            return;
+        }
+            s.source.Play();
+    }
+    private void Start()
+    {
+        Play("Background");
+    }
+
+    private void Update()
+    {
+        //if (completeLevelUI.activeSelf)
+        //{
+        //    foreach (Sound s in sounds)
+        //    {
+        //        s.source.volume = 0.2f;
+        //    }
+        //}
+        //else
+        //{
+        //    foreach (Sound s in sounds)
+        //    {
+        //        s.source.volume = 0.8f;
+        //    }
+        //}
+
+    }
+}
