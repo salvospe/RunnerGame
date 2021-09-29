@@ -20,11 +20,17 @@ public class GameManager : MonoBehaviour
     }
     public void RestartGame()
     {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        FindObjectOfType<AudioManager>().Stop("Background");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void LevelComplete()
     {
         completeLevelUI.SetActive(true);
+    }
+
+    public void BeginGame() 
+    {
+        
     }
 }

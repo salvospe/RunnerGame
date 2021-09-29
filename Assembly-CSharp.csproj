@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\Score.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Credits.cs" />
+    <Compile Include="Assets\CountdownManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

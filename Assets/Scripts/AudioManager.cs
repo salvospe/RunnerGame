@@ -33,8 +33,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    public void Play (string name)
+    public void Play(string name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
         if (s == null)
@@ -42,11 +41,23 @@ public class AudioManager : MonoBehaviour
             Debug.LogWarning("Sound: " + name + " not found!");
             return;
         }
-            s.source.Play();
+        s.source.Play();
     }
+
+    public void Stop(string name)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null)
+        {
+            Debug.LogWarning("Sound: " + name + " not found!");
+            return;
+        }
+        s.source.Stop();
+    }
+
     private void Start()
     {
-        Play("Background");
+        //Play("Background");
     }
 
     private void Update()
