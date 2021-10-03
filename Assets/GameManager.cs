@@ -27,10 +27,14 @@ public class GameManager : MonoBehaviour
     public void LevelComplete()
     {
         completeLevelUI.SetActive(true);
+        Invoke("stopBackground", 0.2f);
+        FindObjectOfType<AudioManager>().Play("Victory");
+
+
+    }
+    public void stopBackground()
+    {
+        FindObjectOfType<AudioManager>().Stop("Background");
     }
 
-    public void BeginGame() 
-    {
-        
-    }
 }

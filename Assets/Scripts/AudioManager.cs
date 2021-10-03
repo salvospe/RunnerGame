@@ -57,25 +57,12 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        //Play("Background");
+
     }
 
     private void Update()
     {
-        //if (completeLevelUI.activeSelf)
-        //{
-        //    foreach (Sound s in sounds)
-        //    {
-        //        s.source.volume = 0.2f;
-        //    }
-        //}
-        //else
-        //{
-        //    foreach (Sound s in sounds)
-        //    {
-        //        s.source.volume = 0.8f;
-        //    }
-        //}
+
 
     }
 }

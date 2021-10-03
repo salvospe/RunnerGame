@@ -14,20 +14,23 @@ public class PlayerMovement : MonoBehaviour
     {
         player.AddForce(0, 0, forwardForce * Time.deltaTime);
 
+        //if (Input.GetKey("w"))
+        //    player.AddForce(0, 0, forwardForce * Time.deltaTime, ForceMode.VelocityChange);
+
+        //if(Input.GetKey("s"))
+        //    player.AddForce(0, 0, -forwardForce * Time.deltaTime, ForceMode.VelocityChange);
+
         if (Input.GetKey("d"))
-        {
             player.AddForce(sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
 
-        }
         if (Input.GetKey("a"))
-        {
             player.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
 
-        }
-        if(playerTransform.position.y<0f)
+        if (playerTransform.position.y<0f)
         {
 
             FindObjectOfType<GameManager>().EndGame();
+
         }
     }
 }
