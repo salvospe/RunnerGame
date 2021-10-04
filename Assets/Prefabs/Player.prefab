@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 15c804a990b70664e82dab884ed6c5ef, type: 2}
+  - {fileID: 2100000, guid: 9b6bc054fe7c4bb4097c39148ae318d0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -128,6 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 6541250701922157054}
   playerTransform: {fileID: 6541250701922157026}
+  material: {fileID: 0}
   forwardForce: 100
   sidewaysForce: 100
 --- !u!114 &6541250701954932804
@@ -144,4 +145,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerMov: {fileID: 6541250701922157025}
   rbPlayer: {fileID: 6541250701922157054}
+  playerTransform: {fileID: 0}
   deathParticles: {fileID: 4808312142132590885, guid: 81920fd8345dd1245b3b6edb1ef6674c, type: 3}

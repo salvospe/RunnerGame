@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     {
         FindObjectOfType<AudioManager>().Stop("Background");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        ScoreManager.gems = 0;
     }
 
     public void LevelComplete()

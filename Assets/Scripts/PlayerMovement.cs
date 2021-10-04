@@ -5,6 +5,7 @@ public class PlayerMovement : MonoBehaviour
     //Reference to the Rididbody component called player
     public Rigidbody player;
     public Transform playerTransform;
+    public Material material;
 
     public float forwardForce = 150f;
     public float sidewaysForce = 300f;
