@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
         //if (Input.GetKey("w"))
         //    player.AddForce(0, 0, forwardForce * Time.deltaTime, ForceMode.VelocityChange);
 
-        //if(Input.GetKey("s"))
+        //if (Input.GetKey("s"))
         //    player.AddForce(0, 0, -forwardForce * Time.deltaTime, ForceMode.VelocityChange);
 
         if (Input.GetKey("d"))
