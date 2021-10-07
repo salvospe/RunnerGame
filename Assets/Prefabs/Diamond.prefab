@@ -98,8 +98,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.4210291, y: 1.7360862, z: 2.1000001}
-  m_Center: {x: -0.10092725, y: 0.10506557, z: -0.19482042}
+  m_Size: {x: 1.4210291, y: 1.7360862, z: 1.5383909}
+  m_Center: {x: -0.10092727, y: 0.10506557, z: 0.08598516}
 --- !u!114 &736780045038351831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,6 +133,7 @@ MonoBehaviour:
   rotationSpeed: 0
   playerTransform: {fileID: 0}
   speed: 10
+  isCollectable: 1
 --- !u!114 &3876361508158604012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,7 +157,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0

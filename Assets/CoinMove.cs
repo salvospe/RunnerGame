@@ -15,16 +15,19 @@ public class CoinMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         transform.position = Vector3.MoveTowards(transform.position, coinScript.playerTransform.position, coinScript.speed * Time.deltaTime);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag=="PlayerBubble")
+        coinScript = gameObject.GetComponent<Coin>();
+        if ((other.gameObject.tag == "PlayerBubble") & (coinScript.isCollectable))
         {
             FindObjectOfType<AudioManager>().Play("Collect");
             ScoreManager.gems++;
             Destroy(gameObject);
         }
     }
+
 }

@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour
 
     public void EndGame()
     {
-        //Application.Quit();
         if (gameHasEnded == false) 
         {
             gameHasEnded = true;

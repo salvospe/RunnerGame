@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 8449484140844514623}
   - component: {fileID: 8436138664551590904}
   - component: {fileID: 8162733938030584310}
-  - component: {fileID: -4917995201044371117}
   m_Layer: 0
   m_Name: Wooden Crate
   m_TagString: Untagged
@@ -109,23 +108,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 819ee0d79a7b6ac4cbd9381cd1eea810, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyedVersion: {fileID: 5900648172177019644, guid: ea414b842593d4640847d9e14ccfd997, type: 3}
-  gem: {fileID: 7973099767857760266, guid: c88845595356fbe4885b6d41f55c489d, type: 3}
-  parent: {fileID: 0}
-  offset:
-  - {x: -1, y: 1.2, z: 0}
-  - {x: 1, y: 1.2, z: 0}
-  - {x: 0, y: 1.2, z: 1}
-  - {x: 0, y: 1.2, z: -1}
---- !u!114 &-4917995201044371117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8435421229224524431}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85303e707d714404bb8b9ef095d8bfb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  destroyedVersion: {fileID: 4430821625589987626, guid: 022ea9215e41f1344a4a4f5a1de7291c, type: 3}

@@ -10,7 +10,7 @@ public class EndTrigger : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(!levelComplete)
+        if((!levelComplete)&(other.tag=="Player"))
         {
             levelComplete = true;
             FindObjectOfType<GameManager>().LevelComplete();
