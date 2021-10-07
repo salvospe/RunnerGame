@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Obstacle
   - Enemy
+  - GemDetector
+  - PlayerBubble
+  - Broken
+  - 2
+  - 1
   layers:
   - Default
   - TransparentFX

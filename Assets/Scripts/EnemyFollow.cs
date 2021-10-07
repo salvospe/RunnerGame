@@ -9,7 +9,6 @@ public class EnemyFollow : MonoBehaviour
     public Transform player;
     public float lookRadius = 10f;
 
-
     // Update is called once per frame
     void Update()
     {

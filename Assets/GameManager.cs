@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
     {
         completeLevelUI.SetActive(true);
         Invoke("stopBackground", 0.2f);
+        Debug.Log("Victory");
         FindObjectOfType<AudioManager>().Play("Victory");
 
 

@@ -47,41 +47,4 @@ public class MovingObject : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, NextPos, speed * Time.deltaTime);
         }
     }
-
-    ////[SerializeField] Transform Positions;
-    //[SerializeField] float speed;
-
-    //[SerializeField] Vector3 newPos;
-
-    //Vector3 nextPos,originalPos;
-
-    //private void Start()
-    //{
-    //    nextPos = transform.position;
-    //    originalPos = transform.position;
-    //}
-
-    //private void Update()
-    //{
-    //if(isMoving)
-    //    MoveGameObject();
-    //}
-    //void MoveGameObject()
-    //{
-
-
-    //if (transform.position == originalPos)
-    //{
-    //    nextPos = newPos;
-    //}
-    //else
-    //{
-    //    transform.position = Vector3.MoveTowards(transform.position, nextPos, speed * Time.deltaTime);
-    //    nextPos = originalPos;
-    //}
-    //}
-
-
-
-
 }

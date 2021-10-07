@@ -5,11 +5,19 @@ public class EndTrigger : MonoBehaviour
 {
     public PlayerMovement PlayerMov;
     public Rigidbody rbPlayer;
+
+    private bool levelComplete = false;
+
     void OnTriggerEnter(Collider other)
     {
-        FindObjectOfType<GameManager>().LevelComplete();
-        //turning player's movement off
-        Invoke("stopPlayer", 0.2f);
+        if(!levelComplete)
+        {
+            levelComplete = true;
+            FindObjectOfType<GameManager>().LevelComplete();
+            //turning player's movement off
+            Invoke("stopPlayer", 0.2f);
+        }
+
     }
 
     void stopPlayer()

@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class ExplosionMat : MonoBehaviour
 {
-    public Material material;
-    public GameObject Object;
+    Material material;
+    public GameObject player;
 
     
     // Start is called before the first frame update
     void Start()
     {
-        material = Object.GetComponent<Renderer>().sharedMaterial;
+        //terial = gameObject.GetComponent<Material>();
+        
 
     }
 
