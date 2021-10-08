@@ -11,6 +11,8 @@ TagManager:
   - Broken
   - 2
   - 1
+  - Gem
+  - Crate
   layers:
   - Default
   - TransparentFX

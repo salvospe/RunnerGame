@@ -53,31 +53,31 @@
     <UnityVersion>2020.3.15f2</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Magnet.cs" />
+    <Compile Include="Assets\Scripts\Magnet.cs" />
     <Compile Include="Assets\Scripts\Sound.cs" />
-    <Compile Include="Assets\DestroyCrackedCrate.cs" />
+    <Compile Include="Assets\Scripts\DestroyCrackedCrate.cs" />
     <Compile Include="Assets\Scripts\Pickup.cs" />
     <Compile Include="Assets\AurynSky\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
     <Compile Include="Assets\Western Props\Scripts\Destructible.cs" />
     <Compile Include="Assets\Scripts\ScoreManager.cs" />
     <Compile Include="Assets\Scripts\PlayerCollision.cs" />
+    <Compile Include="Assets\Scripts\GemExplosion.cs" />
     <Compile Include="Assets\Scripts\LevelComplete.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\CubeExplosion.cs" />
     <Compile Include="Assets\Scripts\EndTrigger.cs" />
     <Compile Include="Assets\Scripts\EnemyFollow.cs" />
     <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
     <Compile Include="Assets\Scripts\ExplosionMat.cs" />
-    <Compile Include="Assets\MovingObject.cs" />
+    <Compile Include="Assets\Scripts\MovingObject.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
     <Compile Include="Assets\Scripts\Score.cs" />
     <Compile Include="Assets\Scripts\CountdownManager.cs" />
-    <Compile Include="Assets\Coin.cs" />
+    <Compile Include="Assets\Scripts\Coin.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Credits.cs" />
-    <Compile Include="Assets\CoinMove.cs" />
-    <Compile Include="Assets\CubeExplosion.cs" />
-    <Compile Include="Assets\GemExplosion.cs" />
+    <Compile Include="Assets\Scripts\CoinMove.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AurynSky\Gems Ultimate Pack\READ ME.txt" />
