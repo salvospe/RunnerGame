@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 7973099767857760271}
   - component: {fileID: 7973099767857760270}
   - component: {fileID: 7973099767857760268}
-  - component: {fileID: 736780045038351831}
   - component: {fileID: 6071194456293873993}
   - component: {fileID: 3876361508158604012}
+  - component: {fileID: 3002461609529053820}
   - component: {fileID: 2841729837279699534}
   m_Layer: 0
   m_Name: Gem
@@ -31,7 +31,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7973099767857760266}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.76, y: 1.09, z: 14.72}
+  m_LocalPosition: {x: 2.76, y: 1.2, z: 14.72}
   m_LocalScale: {x: 0.3964826, y: 0.3964826, z: 0.3964826}
   m_Children:
   - {fileID: 7973099768268285609}
@@ -100,21 +100,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.4210291, y: 1.7360862, z: 1.5383909}
   m_Center: {x: -0.10092727, y: 0.10506557, z: 0.08598516}
---- !u!114 &736780045038351831
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7973099767857760266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c509eb1eee954e478f83bedf2261a49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isMoving: 1
-  speed: 0.4
-  offset: {x: 0, y: 0.2, z: 0}
 --- !u!114 &6071194456293873993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,6 +131,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4eb7d256168ecd469c64207cb3468bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3002461609529053820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7973099767857760266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 655784b00e1c57a4e9d0abf9bbb203ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMoving: 1
+  speed: 0.4
+  offset: {x: 0, y: 0.17, z: 0}
 --- !u!54 &2841729837279699534
 Rigidbody:
   m_ObjectHideFlags: 0
