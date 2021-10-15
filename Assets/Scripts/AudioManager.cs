@@ -11,6 +11,8 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
 
     public GameObject completeLevelUI;
+
+    public AudioMixer mixerAudio;
     void Awake()
     {
         completeLevelUI = GameObject.Find("LevelComplete");

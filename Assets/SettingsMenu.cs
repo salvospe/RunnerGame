@@ -8,6 +8,9 @@ public class SettingsMenu : MonoBehaviour
     public AudioMixer audioMixer;
 
     public Dropdown resolutionDropdown;
+
+    public Dropdown qualityDropdown;
+
     Resolution[] resolutions;
 
 
@@ -41,6 +44,8 @@ public class SettingsMenu : MonoBehaviour
         //show current resolution
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
+
+        
     }
     public void SetVolume(float volume)
     {
@@ -55,7 +60,6 @@ public class SettingsMenu : MonoBehaviour
 
     public void SetFullscreenbool (bool isFullscreen)
     {
-        Debug.Log(isFullscreen);
         Screen.fullScreen = isFullscreen;
     }
 

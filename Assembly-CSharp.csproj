@@ -65,7 +65,9 @@
     <Compile Include="Assets\Scripts\ScoreManager.cs" />
     <Compile Include="Assets\Scripts\PlayerCollision.cs" />
     <Compile Include="Assets\Scripts\GemExplosion.cs" />
+    <Compile Include="Assets\SettingsMenu.cs" />
     <Compile Include="Assets\Scripts\LevelComplete.cs" />
+    <Compile Include="Assets\MainMenu.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\CubeExplosion.cs" />
     <Compile Include="Assets\Scripts\EndTrigger.cs" />
@@ -81,8 +83,7 @@
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Credits.cs" />
     <Compile Include="Assets\Scripts\CoinMove.cs" />
-    <Compile Include="Assets\MainMenu.cs" />
-    <Compile Include="Assets\SettingsMenu.cs" />
+    <Compile Include="Assets\PauseMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AurynSky\Gems Ultimate Pack\READ ME.txt" />

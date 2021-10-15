@@ -18,7 +18,6 @@ public class MovingCamera: MonoBehaviour
     {
         start = transform.position;
         NextPos = transform.position + offset;
-        Debug.Log(transform.position);
     }
 
     // Update is called once per frame
