@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;
+    //CountdownManager countDownScript;
 
     // Start is called before the first frame update
     void Start()
@@ -18,21 +20,15 @@ public class PauseMenu : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Debug.Log("pressed");
             if (GameIsPaused)
-            {
                 Resume();
-            }
             else
-            {
                 Pause();
-            }
-        }
+        
             
     }
 
-    void Resume()
+    public void Resume()
     {
         pauseMenuUI.SetActive(false);
 
@@ -41,14 +37,24 @@ public class PauseMenu : MonoBehaviour
 
         GameIsPaused = false;
     }
-    void Pause()
+    public void Pause()
     {
         pauseMenuUI.SetActive(true);
-        Debug.Log("menu");
 
         //pause the game
         Time.timeScale = 0f;
 
         GameIsPaused = true;
+    }
+
+    public void LoadMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Menu");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }

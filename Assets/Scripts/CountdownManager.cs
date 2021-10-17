@@ -9,6 +9,8 @@ public class CountdownManager : MonoBehaviour
     public Text countdownText;
     public Text score;
 
+    public bool isDone=false;
+
     private void Start()
     {
         Time.timeScale = 0;
@@ -26,6 +28,8 @@ public class CountdownManager : MonoBehaviour
         }
 
         countdownText.text = "GO!";
+
+        isDone = true;
 
         FindObjectOfType<AudioManager>().Play("Background");
 
