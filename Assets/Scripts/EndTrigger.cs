@@ -1,5 +1,6 @@
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndTrigger : MonoBehaviour
 {
@@ -8,6 +9,13 @@ public class EndTrigger : MonoBehaviour
 
     private bool levelComplete = false;
 
+    public int nextSceneLoad;
+
+    void Start()
+    {
+        nextSceneLoad = SceneManager.GetActiveScene().buildIndex + 1;
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if((!levelComplete)&(other.tag=="Player"))
@@ -15,7 +23,10 @@ public class EndTrigger : MonoBehaviour
             levelComplete = true;
             FindObjectOfType<GameManager>().LevelComplete();
             //turning player's movement off
+            if (nextSceneLoad > PlayerPrefs.GetInt("levelAt"))
+                PlayerPrefs.SetInt("levelAt", nextSceneLoad);
             Invoke("stopPlayer", 0.2f);
+
         }
 
     }

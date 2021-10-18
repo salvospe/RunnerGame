@@ -20,7 +20,8 @@ public class GameManager : MonoBehaviour
     public void RestartGame()
     {
         FindObjectOfType<AudioManager>().Stop("Background");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        FindObjectOfType<LevelChanger>().FadeToLevel(SceneManager.GetActiveScene().buildIndex);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         ScoreManager.gems = 0;
     }
 

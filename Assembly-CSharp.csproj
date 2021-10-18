@@ -61,6 +61,7 @@
     <Compile Include="Assets\SwapCamera.cs" />
     <Compile Include="Assets\AurynSky\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
     <Compile Include="Assets\Western Props\Scripts\Destructible.cs" />
+    <Compile Include="Assets\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\MovingObject.cs" />
     <Compile Include="Assets\Scripts\ScoreManager.cs" />
     <Compile Include="Assets\Scripts\PlayerCollision.cs" />
@@ -83,7 +84,8 @@
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Credits.cs" />
     <Compile Include="Assets\Scripts\CoinMove.cs" />
-    <Compile Include="Assets\PauseMenu.cs" />
+    <Compile Include="Assets\LevelChanger.cs" />
+    <Compile Include="Assets\LevelSelection.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AurynSky\Gems Ultimate Pack\READ ME.txt" />
