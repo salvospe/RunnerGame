@@ -2248,7 +2248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4716981, g: 0.2996321, b: 0.12756611, a: 0.34117648}
+  m_Color: {r: 0.4716981, g: 0.2996321, b: 0.12756611, a: 0.6862745}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -19164,13 +19164,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7111411790772595712, guid: a64bb976e50231d44821a588d05f49f9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b8f0ef34ad6d4514ebe3924b2cb7cfb0, type: 2}
     - target: {fileID: 7111411790772595714, guid: a64bb976e50231d44821a588d05f49f9, type: 3}
       propertyPath: m_Name
       value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 7111411790772595714, guid: a64bb976e50231d44821a588d05f49f9, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7111411790772595714, guid: a64bb976e50231d44821a588d05f49f9, type: 3}
       propertyPath: m_StaticEditorFlags

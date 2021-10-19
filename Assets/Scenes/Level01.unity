@@ -4005,7 +4005,7 @@ PrefabInstance:
     - target: {fileID: 6987522689253325521, guid: 15eda57d246b0064a9cf1ce88319c1b4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 420df74d72a549044b218c4e40e59254, type: 2}
+      objectReference: {fileID: 2100000, guid: 8bc146aa01b59dc42956c362295c34e9, type: 2}
     - target: {fileID: 6987522689253325522, guid: 15eda57d246b0064a9cf1ce88319c1b4, type: 3}
       propertyPath: m_Name
       value: Player
@@ -4043,13 +4043,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7111411790772595712, guid: a64bb976e50231d44821a588d05f49f9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8faaa1db2ddfaf642a0a8149de2b227e, type: 2}
     - target: {fileID: 7111411790772595714, guid: a64bb976e50231d44821a588d05f49f9, type: 3}
       propertyPath: m_Name
       value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 7111411790772595714, guid: a64bb976e50231d44821a588d05f49f9, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7111411790772595714, guid: a64bb976e50231d44821a588d05f49f9, type: 3}
       propertyPath: m_StaticEditorFlags

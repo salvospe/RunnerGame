@@ -6,21 +6,24 @@ using UnityEngine.UI;
 public class LevelSelection : MonoBehaviour
 {
     public Button[] levelButtons;
+    int levelAt;
 
     // Start is called before the first frame update
     void Start()
     {
-        int levelAt = PlayerPrefs.GetInt("levelAt", 2);
+        //levelAt = PlayerPrefs.GetInt("levelAt", 2);
 
-        for (int i = 0; i < levelButtons.Length; i++)
-            if (i + 2 > levelAt)
-                levelButtons[i].interactable = false;
-    
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        levelAt = PlayerPrefs.GetInt("levelAt", 2);
+        for (int i = 0; i < levelButtons.Length; i++)
+            if (i + 2 > levelAt)
+            {
+                levelButtons[i].interactable = false;
+                Debug.Log(levelAt);
+            }
     }
 }
