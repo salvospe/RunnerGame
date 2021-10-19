@@ -9,6 +9,10 @@ public class GameManager : MonoBehaviour
 
     public GameObject completeLevelUI;
 
+    void Start()
+    {
+        
+    }
     public void EndGame()
     {
         if (gameHasEnded == false) 

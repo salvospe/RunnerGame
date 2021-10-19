@@ -22,9 +22,10 @@ public class EndTrigger : MonoBehaviour
         {
             levelComplete = true;
             FindObjectOfType<GameManager>().LevelComplete();
-            //turning player's movement off
             if (nextSceneLoad > PlayerPrefs.GetInt("levelAt"))
                 PlayerPrefs.SetInt("levelAt", nextSceneLoad);
+
+            //turning player's movement off
             Invoke("stopPlayer", 0.2f);
 
         }

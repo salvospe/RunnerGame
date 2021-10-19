@@ -8,8 +8,6 @@ public class MainMenu : MonoBehaviour
 {
     public void Level1()
     {
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        //FindObjectOfType<LevelChanger>().FadeToNextLevel();
         FindObjectOfType<LevelChanger>().FadeToLevel(2);
     }
 
@@ -70,6 +68,7 @@ public class MainMenu : MonoBehaviour
 
     public void resetValues()
     {
-        PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteKey("levelAt");
     }
+
 }
