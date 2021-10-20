@@ -7,8 +7,9 @@ public class ScoreManager : MonoBehaviour
 {
     public GameObject gemText;
     public static int gems=0;
+    public int gemsCollected=0;
 
-    int totalGems;
+    public int totalGems;
     int totalCrates;
 
     // Update is called once per frame
@@ -18,11 +19,13 @@ public class ScoreManager : MonoBehaviour
         totalGems = GameObject.FindGameObjectsWithTag("Gem").Length;
 
         totalCrates = (GameObject.FindGameObjectsWithTag("Crate").Length)*8;
+        gems = 0;
     }
 
 
     void Update()
     {
         gemText.GetComponent<Text>().text = gems.ToString("0") + "/" + (totalGems+totalCrates);
+        gemsCollected = gems;
     }
 }

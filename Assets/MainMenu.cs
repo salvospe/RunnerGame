@@ -68,7 +68,7 @@ public class MainMenu : MonoBehaviour
 
     public void resetValues()
     {
-        PlayerPrefs.DeleteKey("levelAt");
+        PlayerPrefs.DeleteAll();
     }
 
 }
