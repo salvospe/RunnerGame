@@ -29,14 +29,13 @@ public class CountdownManager : MonoBehaviour
 
         countdownText.text = "GO!";
 
-        isDone = true;
-
         FindObjectOfType<AudioManager>().Play("Background");
 
         yield return new WaitForSecondsRealtime(0.4f);
 
         countdownText.gameObject.SetActive(false);
         Time.timeScale = 1;
+        FindObjectOfType<PauseMenu>().CountdownDone = true;
         score.gameObject.SetActive(true);
         
     }

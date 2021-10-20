@@ -8,7 +8,9 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;
-    //CountdownManager countDownScript;
+
+    public bool CountdownDone = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -19,11 +21,15 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape)&&CountdownDone)
+        {
+            Debug.Log(CountdownDone);
             if (GameIsPaused)
                 Resume();
             else
                 Pause();
+        }
+            
         
             
     }
