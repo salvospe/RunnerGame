@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
         if (gameHasEnded == false) 
         {
             gameHasEnded = true;
+            FindObjectOfType<EndTrigger>().updateScore();
             Invoke("RestartGame", delay);
         }
     }

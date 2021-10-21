@@ -23,7 +23,6 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape)&&CountdownDone)
         {
-            Debug.Log(CountdownDone);
             if (GameIsPaused)
                 Resume();
             else
