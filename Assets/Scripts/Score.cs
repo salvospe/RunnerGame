@@ -9,7 +9,7 @@ public class Score : MonoBehaviour
 
     void Update()
     {
-        if (player.position.y >= 1)
+        if (player.position.y >= 0.95)
         {
             score.text = player.position.z.ToString("0");
         }

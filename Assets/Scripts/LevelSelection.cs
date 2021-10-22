@@ -13,7 +13,11 @@ public class LevelSelection : MonoBehaviour
     RawImage[] logo;
     Text[] gems;
 
-    // Update is called once per frame
+    void Start()
+    {
+        FindObjectOfType<AudioManager>().Play("MenuBackground");
+    }
+
     void Update()
     {
         // unlocking levels

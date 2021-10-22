@@ -46,36 +46,36 @@ MonoBehaviour:
   sounds:
   - name: Collect
     clip: {fileID: 8300000, guid: 8e636ec946890274ab514b0ad0159fa4, type: 3}
-    volume: 0.1
+    volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Explosion
     clip: {fileID: 8300000, guid: eb959e07bd54a444bbf2681fa39c73ea, type: 3}
-    volume: 0.1
+    volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Victory
     clip: {fileID: 8300000, guid: 817f85c0abde1864fbfadc4633c9c787, type: 3}
-    volume: 0.1
+    volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: WoodenBox
     clip: {fileID: 8300000, guid: cfbb2115e3b1d384399f44eb4447489d, type: 3}
-    volume: 0.1
+    volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: MenuBackground
-    clip: {fileID: 8300000, guid: 2475c1971f6a1d343aa5aa9142900f90, type: 3}
+    clip: {fileID: 8300000, guid: c10483f6a86cb4f4bb1959f1dbdc20a1, type: 3}
     volume: 1
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: GameBackground
-    clip: {fileID: 8300000, guid: 87876035b5a1faa4a9ad0b464c4a7888, type: 3}
+    clip: {fileID: 8300000, guid: 34ec508eda88ba34c926bdebc99390e8, type: 3}
     volume: 1
     pitch: 1
     loop: 1

@@ -9,7 +9,7 @@ public class PlayerMaterial : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        switch (PlayerPrefs.GetInt("material", 14))
+        switch (PlayerPrefs.GetInt("material", 3))
         {
             case 1:
                 gameObject.GetComponent<Renderer>().material = materials[0];
