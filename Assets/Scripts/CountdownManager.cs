@@ -29,7 +29,7 @@ public class CountdownManager : MonoBehaviour
 
         countdownText.text = "GO!";
 
-        FindObjectOfType<AudioManager>().Play("Background");
+        FindObjectOfType<AudioManager>().Play("GameBackground");
 
         yield return new WaitForSecondsRealtime(0.4f);
 

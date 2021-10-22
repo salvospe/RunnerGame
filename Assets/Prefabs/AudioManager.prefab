@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5029129896356942417
+--- !u!1 &1702084076794038611
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5029129896356942419}
-  - component: {fileID: 5029129896356942416}
+  - component: {fileID: 2240712576005655407}
+  - component: {fileID: 4558313054060008952}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -17,13 +17,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5029129896356942419
+--- !u!4 &2240712576005655407
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5029129896356942417}
+  m_GameObject: {fileID: 1702084076794038611}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -31,23 +31,54 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5029129896356942416
+--- !u!114 &4558313054060008952
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5029129896356942417}
+  m_GameObject: {fileID: 1702084076794038611}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9352892db2156db4fb00d4b9ccd98edd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: Background
-    clip: {fileID: 8300000, guid: 5b79111aecedeb649ac5ef9200174a94, type: 3}
-    volume: 1
+  - name: Collect
+    clip: {fileID: 8300000, guid: 8e636ec946890274ab514b0ad0159fa4, type: 3}
+    volume: 0.1
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: Explosion
+    clip: {fileID: 8300000, guid: eb959e07bd54a444bbf2681fa39c73ea, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Victory
+    clip: {fileID: 8300000, guid: 817f85c0abde1864fbfadc4633c9c787, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: WoodenBox
+    clip: {fileID: 8300000, guid: cfbb2115e3b1d384399f44eb4447489d, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MenuBackground
+    clip: {fileID: 8300000, guid: 2475c1971f6a1d343aa5aa9142900f90, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: GameBackground
+    clip: {fileID: 8300000, guid: 87876035b5a1faa4a9ad0b464c4a7888, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
   completeLevelUI: {fileID: 0}
+  mixerAudio: {fileID: 24100000, guid: 818448f16673fe9489ca8a8bc9aa7bc5, type: 2}

@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     }
     public void RestartGame()
     {
-        FindObjectOfType<AudioManager>().Stop("Background");
+        FindObjectOfType<AudioManager>().Stop("GameBackground");
         FindObjectOfType<LevelChanger>().FadeToLevel(SceneManager.GetActiveScene().buildIndex);
         ScoreManager.gems = 0;
     }
@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
     }
     public void stopBackground()
     {
-        FindObjectOfType<AudioManager>().Stop("Background");
+        FindObjectOfType<AudioManager>().Stop("GameBackground");
     }
 
 }
