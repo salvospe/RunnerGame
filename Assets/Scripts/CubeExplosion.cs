@@ -6,7 +6,7 @@ public class CubeExplosion : MonoBehaviour
 {
     public int cubesPerAxis = 8;
     public float delay = 1f;
-    public float force = 300f;
+    public float force = 100f;
     public float radius = 2f;
 
     PlayerCollision PlayerCollisionScript;
@@ -44,17 +44,18 @@ public class CubeExplosion : MonoBehaviour
         rd.material = GetComponent<Renderer>().material;
 
         // Set scale to be a fraction of the original cube
-        Vector3 offset = new Vector3(0.2f, 0.2f, 0.2f);
-        cube.transform.localScale = (transform.localScale - offset) / cubesPerAxis;
+        Vector3 offset = new Vector3(0.75f, 0.75f, 0.75f);
+        cube.transform.localScale = /*(transform.localScale)*/ offset / cubesPerAxis;
         //cube.transform.localScale = transform.localScale / cubesPerAxis;
 
         // Set the position
-        Vector3 offset2 = new Vector3(0, 0.2f, 0);
+        Vector3 offset2 = new Vector3(1.6f, 1.4f, 1.4f);
         Vector3 firstCube = (transform.position+offset2) - transform.localScale / 2 + cube.transform.localScale / 2;
         cube.transform.position = firstCube + Vector3.Scale(coordinates, cube.transform.localScale);
 
         // Create the explosion
         Rigidbody rb = cube.AddComponent<Rigidbody>();
+        //rb.mass = 1000045324;
         rb.AddExplosionForce(force, transform.position, radius);
 
         // Turn on mesh renderer
