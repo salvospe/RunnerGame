@@ -7,11 +7,14 @@ public class GameManager : MonoBehaviour
 
     public float delay = 1f;
 
+    public float RotationPerSecond = 1;
+
     public GameObject completeLevelUI;
 
-    void Start()
-    {
-        
+    void Update()
+    {   
+        //Rotating skybox
+        RenderSettings.skybox.SetFloat("_Rotation", Time.unscaledTime /*Time.time*/ * RotationPerSecond); 
     }
     public void EndGame()
     {
