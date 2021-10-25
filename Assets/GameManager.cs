@@ -21,7 +21,6 @@ public class GameManager : MonoBehaviour
         if (gameHasEnded == false) 
         {
             gameHasEnded = true;
-            FindObjectOfType<EndTrigger>().updateScore();
             Invoke("RestartGame", delay);
         }
     }
@@ -29,6 +28,7 @@ public class GameManager : MonoBehaviour
     {
         FindObjectOfType<AudioManager>().Stop("GameBackground");
         FindObjectOfType<LevelChanger>().FadeToLevel(SceneManager.GetActiveScene().buildIndex);
+        FindObjectOfType<EndTrigger>().updateScore();
         ScoreManager.gems = 0;
     }
 

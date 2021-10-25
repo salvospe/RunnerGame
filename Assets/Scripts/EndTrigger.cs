@@ -15,6 +15,8 @@ public class EndTrigger : MonoBehaviour
 
     int scoreInt;
 
+    int differenceGems, bank;
+
     void Start()
     {
         nextSceneLoad = SceneManager.GetActiveScene().buildIndex + 1;
@@ -171,49 +173,109 @@ public class EndTrigger : MonoBehaviour
 
         }
     }
-    void updateGems()
+    public void updateGems()
     {
         switch (SceneManager.GetActiveScene().buildIndex)
         {
             case 2:
                 if (PlayerPrefs.GetInt("gems1") < FindObjectOfType<ScoreManager>().gemsCollected)
+                {
+                    differenceGems = FindObjectOfType<ScoreManager>().gemsCollected - PlayerPrefs.GetInt("gems1");
+                    bank = PlayerPrefs.GetInt("bank", 0);
+                    bank += differenceGems;
+                    PlayerPrefs.SetInt("bank", bank);
                     PlayerPrefs.SetInt("gems1", FindObjectOfType<ScoreManager>().gemsCollected);
+                }
                 break;
             case 3:
                 if (PlayerPrefs.GetInt("gems2") < FindObjectOfType<ScoreManager>().gemsCollected)
+                {
+                    differenceGems = FindObjectOfType<ScoreManager>().gemsCollected - PlayerPrefs.GetInt("gems2");
+                    bank = PlayerPrefs.GetInt("bank", 0);
+                    bank += differenceGems;
+                    PlayerPrefs.SetInt("bank", bank);
                     PlayerPrefs.SetInt("gems2", FindObjectOfType<ScoreManager>().gemsCollected);
+                }
                 break;
             case 4:
                 if (PlayerPrefs.GetInt("gems3") < FindObjectOfType<ScoreManager>().gemsCollected)
+                {
+                    differenceGems = FindObjectOfType<ScoreManager>().gemsCollected - PlayerPrefs.GetInt("gems3");
+                    bank = PlayerPrefs.GetInt("bank", 0);
+                    bank += differenceGems;
+                    PlayerPrefs.SetInt("bank", bank);
                     PlayerPrefs.SetInt("gems3", FindObjectOfType<ScoreManager>().gemsCollected);
+                }
                 break;
             case 5:
                 if (PlayerPrefs.GetInt("gems4") < FindObjectOfType<ScoreManager>().gemsCollected)
+                {
+                    differenceGems = FindObjectOfType<ScoreManager>().gemsCollected - PlayerPrefs.GetInt("gems4");
+                    bank = PlayerPrefs.GetInt("bank", 0);
+                    bank += differenceGems;
+                    PlayerPrefs.SetInt("bank", bank);
                     PlayerPrefs.SetInt("gems4", FindObjectOfType<ScoreManager>().gemsCollected);
+                }
                 break;
             case 6:
                 if (PlayerPrefs.GetInt("gems5") < FindObjectOfType<ScoreManager>().gemsCollected)
+                {
+                    differenceGems = FindObjectOfType<ScoreManager>().gemsCollected - PlayerPrefs.GetInt("gems5");
+                    bank = PlayerPrefs.GetInt("bank", 0);
+                    bank += differenceGems;
+                    PlayerPrefs.SetInt("bank", bank);
                     PlayerPrefs.SetInt("gems5", FindObjectOfType<ScoreManager>().gemsCollected);
+                }
                 break;
             case 7:
                 if (PlayerPrefs.GetInt("gems6") < FindObjectOfType<ScoreManager>().gemsCollected)
+                {
+                    differenceGems = FindObjectOfType<ScoreManager>().gemsCollected - PlayerPrefs.GetInt("gems6");
+                    bank = PlayerPrefs.GetInt("bank", 0);
+                    bank += differenceGems;
+                    PlayerPrefs.SetInt("bank", bank);
                     PlayerPrefs.SetInt("gems6", FindObjectOfType<ScoreManager>().gemsCollected);
+                }
                 break;
             case 8:
                 if (PlayerPrefs.GetInt("gems7") < FindObjectOfType<ScoreManager>().gemsCollected)
+                {
+                    differenceGems = FindObjectOfType<ScoreManager>().gemsCollected - PlayerPrefs.GetInt("gems7");
+                    bank = PlayerPrefs.GetInt("bank", 0);
+                    bank += differenceGems;
+                    PlayerPrefs.SetInt("bank", bank);
                     PlayerPrefs.SetInt("gems7", FindObjectOfType<ScoreManager>().gemsCollected);
+                }
                 break;
             case 9:
                 if (PlayerPrefs.GetInt("gems8") < FindObjectOfType<ScoreManager>().gemsCollected)
+                {
+                    differenceGems = FindObjectOfType<ScoreManager>().gemsCollected - PlayerPrefs.GetInt("gems8");
+                    bank = PlayerPrefs.GetInt("bank", 0);
+                    bank += differenceGems;
+                    PlayerPrefs.SetInt("bank", bank);
                     PlayerPrefs.SetInt("gems8", FindObjectOfType<ScoreManager>().gemsCollected);
+                }
                 break;
             case 10:
                 if (PlayerPrefs.GetInt("gems9") < FindObjectOfType<ScoreManager>().gemsCollected)
+                {
+                    differenceGems = FindObjectOfType<ScoreManager>().gemsCollected - PlayerPrefs.GetInt("gems9");
+                    bank = PlayerPrefs.GetInt("bank", 0);
+                    bank += differenceGems;
+                    PlayerPrefs.SetInt("bank", bank);
                     PlayerPrefs.SetInt("gems9", FindObjectOfType<ScoreManager>().gemsCollected);
+                }
                 break;
             case 11:
                 if (PlayerPrefs.GetInt("gems10") < FindObjectOfType<ScoreManager>().gemsCollected)
+                {
+                    differenceGems = FindObjectOfType<ScoreManager>().gemsCollected - PlayerPrefs.GetInt("gems10");
+                    bank = PlayerPrefs.GetInt("bank", 0);
+                    bank += differenceGems;
+                    PlayerPrefs.SetInt("bank", bank);
                     PlayerPrefs.SetInt("gems10", FindObjectOfType<ScoreManager>().gemsCollected);
+                }
                 break;
 
         }

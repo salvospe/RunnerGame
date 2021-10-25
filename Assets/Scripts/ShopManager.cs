@@ -9,15 +9,13 @@ public class ShopManager : MonoBehaviour
     //items available
     public int[,] shopItems = new int[5,5];
 
-    //currenty coins
-    public float coins;
-
+    int bank;
     public Text CoinsTxt;
 
 
     void Start()
     {
-        CoinsTxt.text = "Coins:" + coins.ToString();
+        CoinsTxt.text = PlayerPrefs.GetInt("bank").ToString();
 
         //ID's
         shopItems[1, 1] = 1;
@@ -26,7 +24,7 @@ public class ShopManager : MonoBehaviour
         shopItems[1, 4] = 4;
 
         //Price
-        shopItems[2, 1] = 10;
+        shopItems[2, 1] = 1;
         shopItems[2, 2] = 20;
         shopItems[2, 3] = 30;
         shopItems[2, 4] = 40;
@@ -44,12 +42,18 @@ public class ShopManager : MonoBehaviour
     {
         GameObject ButtonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
 
-        if (coins >= shopItems[2, ButtonRef.GetComponent<ButtonInfo>().ItemID])
+        if (PlayerPrefs.GetInt("bank") >= shopItems[2, ButtonRef.GetComponent<ButtonInfo>().ItemID] & !ButtonRef.GetComponent<ButtonInfo>().isBought)
         {
-            coins -= shopItems[2, ButtonRef.GetComponent<ButtonInfo>().ItemID];
-            shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID]++;
-            CoinsTxt.text = "Coins:" + coins.ToString();
-            ButtonRef.GetComponent<ButtonInfo>().QuantityTxt.text = shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID].ToString();
+            ButtonRef.GetComponent<ButtonInfo>().isBought = true;
+            bank = PlayerPrefs.GetInt("bank");
+            bank -= shopItems[2, ButtonRef.GetComponent<ButtonInfo>().ItemID];
+            PlayerPrefs.SetInt("bank", bank);
+            //shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID]++;
+            CoinsTxt.text = PlayerPrefs.GetInt("bank").ToString();
+            //ButtonRef.GetComponent<ButtonInfo>().QuantityTxt.text = shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID].ToString();
+            ButtonRef.GetComponent<ButtonInfo>().GetComponent<Image>().enabled = false;
+            ButtonRef.GetComponent<ButtonInfo>().GetComponentInChildren<RawImage>().enabled = false;
+            
 
         }
 

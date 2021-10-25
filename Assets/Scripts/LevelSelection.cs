@@ -8,6 +8,7 @@ public class LevelSelection : MonoBehaviour
     public Button[] levelButtons;
     public Text[] gemsCollected;
     public Text[] scores;
+    public Text bankTxt;
     int levelAt;
 
     RawImage[] logo;
@@ -92,6 +93,6 @@ public class LevelSelection : MonoBehaviour
 
             }
         }
-
+        bankTxt.text = PlayerPrefs.GetInt("bank", 0).ToString();
     }
 }

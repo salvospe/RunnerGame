@@ -10,10 +10,13 @@ public class ButtonInfo : MonoBehaviour
     public Text PriceTxt;
     public Text QuantityTxt;
     public GameObject ShopManager;
+    public bool isBought = false;
 
     void Update()
     {
-        PriceTxt.text = "Price: $" + ShopManager.GetComponent<ShopManager>().shopItems[2, ItemID].ToString();
-        QuantityTxt.text = ShopManager.GetComponent<ShopManager>().shopItems[3, ItemID].ToString();
+        if (!isBought)
+            PriceTxt.text = ShopManager.GetComponent<ShopManager>().shopItems[2, ItemID].ToString();
+        else
+            PriceTxt.GetComponent<Text>().enabled = false;
     }
 }
