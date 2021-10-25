@@ -15,7 +15,6 @@ public class LevelSelection : MonoBehaviour
 
     void Start()
     {
-        FindObjectOfType<AudioManager>().Play("MenuBackground");
     }
 
     void Update()

@@ -71,6 +71,16 @@ public class MainMenu : MonoBehaviour
         FindObjectOfType<AudioManager>().Stop("MenuBackground");
     }
 
+    public void ButtonClicked()
+    {
+        FindObjectOfType<AudioManager>().Play("ButtonClick");
+    }
+
+    public void LevelButtonClicked()
+    {
+        FindObjectOfType<AudioManager>().Play("LevelSelected");
+    }
+
     public void QuitGame ()
     {
         Application.Quit();

@@ -69,7 +69,7 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: MenuBackground
-    clip: {fileID: 8300000, guid: c10483f6a86cb4f4bb1959f1dbdc20a1, type: 3}
+    clip: {fileID: 8300000, guid: ce201bbd65f7ad34da53c7a4f6a44a8a, type: 3}
     volume: 1
     pitch: 1
     loop: 1
@@ -79,6 +79,30 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     loop: 1
+    source: {fileID: 0}
+  - name: ButtonClick
+    clip: {fileID: 8300000, guid: 2a73927dbc54a8b48b3b421a986ad26a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Countdown
+    clip: {fileID: 8300000, guid: 0703f7c9a94ced0418d8f58d1aab6a39, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: LevelSelected
+    clip: {fileID: 8300000, guid: a7330082d4dfc164fb33d53fa3c9be6a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ExplosionBox
+    clip: {fileID: 8300000, guid: fa365dee53d70fa40ae1fd1193dfca89, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
     source: {fileID: 0}
   completeLevelUI: {fileID: 0}
   mixerAudio: {fileID: 24100000, guid: 818448f16673fe9489ca8a8bc9aa7bc5, type: 2}

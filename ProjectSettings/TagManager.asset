@@ -14,6 +14,8 @@ TagManager:
   - Gem
   - Crate
   - LevelNumber
+  - TNT
+  - Event
   layers:
   - Default
   - TransparentFX

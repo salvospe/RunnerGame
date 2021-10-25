@@ -18,6 +18,7 @@ public class CountdownManager : MonoBehaviour
     }
     IEnumerator CountdownToStart()
     {
+        
         while(countdownTime>0)
         {
             countdownText.text = countdownTime.ToString();

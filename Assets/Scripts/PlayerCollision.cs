@@ -9,7 +9,7 @@ public class PlayerCollision : MonoBehaviour
     public GameObject player;
     public CubeExplosion explosionScript;
 
-    public ParticleSystem deathParticles;
+    public ParticleSystem explosion;
     void OnCollisionEnter(Collision collisionInfo)
     {
         if((collisionInfo.collider.tag=="Obstacle") || (collisionInfo.collider.tag=="Enemy") || (playerTransform.position.y < 0f))
@@ -17,6 +17,20 @@ public class PlayerCollision : MonoBehaviour
             //turning player's movement off
             Destroy2();
             turnOff();
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "TNT")
+        {
+            //turning player's movement off
+
+            //Destroy2();
+            Invoke("Destroy2", 0.1f);
+            Invoke("turnOff", 0.1f);
+            Instantiate(explosion, other.GetComponent<Transform>().position, Quaternion.identity);
+            FindObjectOfType<AudioManager>().Play("ExplosionBox");
         }
     }
 
@@ -33,12 +47,5 @@ public class PlayerCollision : MonoBehaviour
         FindObjectOfType<GameManager>().EndGame();
     }
 
-    public void Destroy()
-    {
-        Instantiate(deathParticles, transform.position, Quaternion.identity);
-        FindObjectOfType<AudioManager>().Play("Explosion");
-        gameObject.SetActive(false);
-
-    }
 
 }
