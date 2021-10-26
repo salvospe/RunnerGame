@@ -14,9 +14,6 @@ public class LevelSelection : MonoBehaviour
     RawImage[] logo;
     Text[] gems;
 
-    void Start()
-    {
-    }
 
     void Update()
     {

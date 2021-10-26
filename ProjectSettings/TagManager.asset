@@ -16,6 +16,7 @@ TagManager:
   - LevelNumber
   - TNT
   - Event
+  - Item
   layers:
   - Default
   - TransparentFX
