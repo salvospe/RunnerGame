@@ -145,12 +145,19 @@ public class ShopManager : MonoBehaviour
             //set material to the ball
             setMaterial(ButtonRef.GetComponent<ButtonInfo>().ItemID);
 
+            FindObjectOfType<AudioManager>().Play("Shop");
+
         }
 
         else 
         {
             //set material to the ball
             setMaterial(ButtonRef.GetComponent<ButtonInfo>().ItemID);
+        }
+
+        if(ButtonRef.GetComponent<ButtonInfo>().isBoughtPrefs[itemId] == 1)
+        {
+            FindObjectOfType<AudioManager>().Play("Selected");
         }
 
     }

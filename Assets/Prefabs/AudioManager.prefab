@@ -104,5 +104,17 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: Shop
+    clip: {fileID: 8300000, guid: 613ec2a5a61fe4d4d96f9363f854354a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Selected
+    clip: {fileID: 8300000, guid: 415428a5c86c0bb49a94822ea72623c0, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
   completeLevelUI: {fileID: 0}
   mixerAudio: {fileID: 24100000, guid: 818448f16673fe9489ca8a8bc9aa7bc5, type: 2}
