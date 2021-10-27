@@ -50,71 +50,82 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+    audiomixer: {fileID: 24300002, guid: 37343040db5c41d4ba0a20beb4caadb6, type: 2}
   - name: Explosion
     clip: {fileID: 8300000, guid: eb959e07bd54a444bbf2681fa39c73ea, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
+    audiomixer: {fileID: 24300002, guid: 37343040db5c41d4ba0a20beb4caadb6, type: 2}
   - name: Victory
     clip: {fileID: 8300000, guid: 817f85c0abde1864fbfadc4633c9c787, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
+    audiomixer: {fileID: 24300002, guid: 37343040db5c41d4ba0a20beb4caadb6, type: 2}
   - name: WoodenBox
     clip: {fileID: 8300000, guid: cfbb2115e3b1d384399f44eb4447489d, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
+    audiomixer: {fileID: 24300002, guid: 37343040db5c41d4ba0a20beb4caadb6, type: 2}
   - name: MenuBackground
     clip: {fileID: 8300000, guid: ce201bbd65f7ad34da53c7a4f6a44a8a, type: 3}
     volume: 1
     pitch: 1
     loop: 1
     source: {fileID: 0}
+    audiomixer: {fileID: 24300002, guid: 818448f16673fe9489ca8a8bc9aa7bc5, type: 2}
   - name: GameBackground
     clip: {fileID: 8300000, guid: 34ec508eda88ba34c926bdebc99390e8, type: 3}
     volume: 1
     pitch: 1
     loop: 1
     source: {fileID: 0}
+    audiomixer: {fileID: 24300002, guid: 818448f16673fe9489ca8a8bc9aa7bc5, type: 2}
   - name: ButtonClick
     clip: {fileID: 8300000, guid: 2a73927dbc54a8b48b3b421a986ad26a, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
+    audiomixer: {fileID: 24300002, guid: 37343040db5c41d4ba0a20beb4caadb6, type: 2}
   - name: Countdown
     clip: {fileID: 8300000, guid: 0703f7c9a94ced0418d8f58d1aab6a39, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
+    audiomixer: {fileID: 24300002, guid: 37343040db5c41d4ba0a20beb4caadb6, type: 2}
   - name: LevelSelected
     clip: {fileID: 8300000, guid: a7330082d4dfc164fb33d53fa3c9be6a, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
+    audiomixer: {fileID: 24300002, guid: 37343040db5c41d4ba0a20beb4caadb6, type: 2}
   - name: ExplosionBox
     clip: {fileID: 8300000, guid: fa365dee53d70fa40ae1fd1193dfca89, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
+    audiomixer: {fileID: 24300002, guid: 37343040db5c41d4ba0a20beb4caadb6, type: 2}
   - name: Shop
     clip: {fileID: 8300000, guid: 613ec2a5a61fe4d4d96f9363f854354a, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
+    audiomixer: {fileID: 24300002, guid: 37343040db5c41d4ba0a20beb4caadb6, type: 2}
   - name: Selected
     clip: {fileID: 8300000, guid: 415428a5c86c0bb49a94822ea72623c0, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
+    audiomixer: {fileID: 24300002, guid: 37343040db5c41d4ba0a20beb4caadb6, type: 2}
   completeLevelUI: {fileID: 0}
-  mixerAudio: {fileID: 24100000, guid: 818448f16673fe9489ca8a8bc9aa7bc5, type: 2}

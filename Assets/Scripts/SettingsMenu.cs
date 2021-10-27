@@ -5,11 +5,14 @@ using UnityEngine.Audio;
 using UnityEngine.UI;
 public class SettingsMenu : MonoBehaviour
 {
-    public AudioMixer audioMixer;
+    public AudioMixer Master;
+    public AudioMixer SoundEffects;
 
     public Dropdown resolutionDropdown;
 
-    public Dropdown qualityDropdown;
+    public Slider MasterVolume;
+
+    public Slider SfxVolume;
 
     Resolution[] resolutions;
 
@@ -45,11 +48,23 @@ public class SettingsMenu : MonoBehaviour
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
 
+
+        //getting volume values stored
+        MasterVolume.value = PlayerPrefs.GetFloat("MasterVolume", 1);
+        SfxVolume.value = PlayerPrefs.GetFloat("SfxVolume", 1);
+
         
     }
     public void SetVolume(float volume)
     {
-        audioMixer.SetFloat("volume", volume);
+        Master.SetFloat("volume", Mathf.Log10(volume) * 20);
+        PlayerPrefs.SetFloat("MasterVolume", volume);
+    }
+
+    public void SetVolumeSfx(float volume)
+    {
+        SoundEffects.SetFloat("volume", Mathf.Log10(volume) * 20);
+        PlayerPrefs.SetFloat("SfxVolume", volume);
     }
 
     public void SetResolution(int resolutionIndex)
