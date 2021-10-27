@@ -17,6 +17,7 @@ TagManager:
   - TNT
   - Event
   - Item
+  - JumpingPad
   layers:
   - Default
   - TransparentFX
