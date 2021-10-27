@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -11,19 +13,41 @@ public class PauseMenu : MonoBehaviour
 
     public bool CountdownDone = false;
 
-    // Update is called once per frame
+    public AudioMixer Master;
+    public AudioMixer SoundEffects;
+
+    public Slider MasterVolume;
+    public Slider SfxVolume;
+
+    void Awake()
+    {
+        //getting volume values stored
+        MasterVolume.value = PlayerPrefs.GetFloat("MasterVolume", 1);
+        SfxVolume.value = PlayerPrefs.GetFloat("SfxVolume", 1);
+    }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape)&&CountdownDone)
+
+        if (Input.GetKeyDown(KeyCode.Escape) && CountdownDone)
         {
+            Debug.Log("pressed");
             if (GameIsPaused)
                 Resume();
             else
                 Pause();
         }
-           
+    }
+    public void SetVolume(float volume)
+    {
+        Master.SetFloat("volume", Mathf.Log10(volume) * 20);
+        PlayerPrefs.SetFloat("MasterVolume", volume);
     }
 
+    public void SetVolumeSfx(float volume)
+    {
+        SoundEffects.SetFloat("volume", Mathf.Log10(volume) * 20);
+        PlayerPrefs.SetFloat("SfxVolume", volume);
+    }
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
