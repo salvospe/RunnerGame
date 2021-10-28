@@ -522,5 +522,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 2683511994318484722}
-  player: {fileID: 6987522689253325519, guid: 15eda57d246b0064a9cf1ce88319c1b4, type: 3}
+  player: {fileID: 1320601295915284652, guid: 15eda57d246b0064a9cf1ce88319c1b4, type: 3}
   lookRadius: 15

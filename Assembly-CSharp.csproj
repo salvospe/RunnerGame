@@ -76,6 +76,7 @@
     <Compile Include="Assets\VolumeSlider.cs" />
     <Compile Include="Assets\FarlandSkies\Demo\Scripts\Player\SmoothMouseLook.cs" />
     <Compile Include="Assets\Scripts\LevelComplete.cs" />
+    <Compile Include="Assets\JumpingPadScript.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\CubeExplosion.cs" />
@@ -96,7 +97,6 @@
     <Compile Include="Assets\Scripts\ButtonInfo.cs" />
     <Compile Include="Assets\Scripts\Credits.cs" />
     <Compile Include="Assets\Scripts\CoinMove.cs" />
-    <Compile Include="Assets\JumpingPadScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
