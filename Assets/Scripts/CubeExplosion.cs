@@ -55,7 +55,7 @@ public class CubeExplosion : MonoBehaviour
 
         // Create the explosion
         Rigidbody rb = cube.AddComponent<Rigidbody>();
-        //rb.mass = 1000045324;
+        rb.mass = 0.8f;
         rb.AddExplosionForce(force, transform.position, radius);
 
         // Turn on mesh renderer

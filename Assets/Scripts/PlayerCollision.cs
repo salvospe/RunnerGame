@@ -9,9 +9,14 @@ public class PlayerCollision : MonoBehaviour
     public GameObject player;
     public CubeExplosion explosionScript;
 
-    public float tempForce;
+    public float jumpForce = 400f;
+    public LayerMask groundMask;
 
-    //public ParticleSystem explosion;
+    public ParticleSystem explosion;
+
+
+
+
     void OnCollisionEnter(Collision collisionInfo)
     {
         if((collisionInfo.collider.tag=="Obstacle") || (collisionInfo.collider.tag=="Enemy") || (playerTransform.position.y < 0f))
@@ -22,25 +27,24 @@ public class PlayerCollision : MonoBehaviour
         }
         if (collisionInfo.collider.tag == "JumpingPad")
         {
-            Debug.Log("eccolo");
-            rbPlayer.AddForce(0, 1200f * Time.deltaTime, 0, ForceMode.Impulse);
+            Jump();
 
-            tempForce = FindObjectOfType<PlayerMovement>().forwardForce;
-            FindObjectOfType<PlayerMovement>().forwardForce = 0;
-
-            //rbPlayer.constraints = RigidbodyConstraints.FreezePositionZ;
-            rbPlayer.constraints = RigidbodyConstraints.FreezePositionZ;
-            rbPlayer.constraints = RigidbodyConstraints.None;
-
-            Invoke("restoreMass", 2f);
-            
         }
     }
 
-    void restoreMass()
+
+    private void Jump()
     {
-        FindObjectOfType<PlayerMovement>().forwardForce = tempForce;
-        //rbPlayer.constraints = RigidbodyConstraints.None;
+        // check whether we are currently grounded
+
+        //get the bounds of the collider
+        float height = GetComponent<Collider>().bounds.size.y;
+        bool isGrounded = Physics.Raycast(transform.position, Vector3.down, (height / 2) + 0.1f, groundMask);
+
+        // if we are jump
+
+        rbPlayer.AddForce(Vector3.up * jumpForce);
+    
     }
 
     private void OnTriggerEnter(Collider other)
@@ -52,7 +56,7 @@ public class PlayerCollision : MonoBehaviour
             //Destroy2();
             Invoke("Destroy2", 0.1f);
             Invoke("turnOff", 0.1f);
-            //Instantiate(explosion, other.GetComponent<Transform>().position, Quaternion.identity);
+            Instantiate(explosion, other.GetComponent<Transform>().position, Quaternion.identity);
             FindObjectOfType<AudioManager>().Play("ExplosionBox");
         }
     }
