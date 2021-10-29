@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GemExplosion : MonoBehaviour
 {
+    bool explosionDone = false;
     bool hasExploded = false;
     public float force =700f;
     public float radius = 2f;
@@ -27,8 +28,12 @@ public class GemExplosion : MonoBehaviour
         }
         else
         {
-            Invoke("afterExplosion", 1f);
-            Invoke("activateMagnet", 0.5f);
+            if (!explosionDone)
+            {
+                Invoke("afterExplosion", 0.15f);
+                Invoke("activateMagnet", 0.5f);
+                explosionDone = true;
+            }
             //for (int i = 0; i < 8; i++)
             //gems[i]  = gameObject this.GetChild(i);
             //coinScript.isCollectable = true;

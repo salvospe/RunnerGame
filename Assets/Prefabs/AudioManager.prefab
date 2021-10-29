@@ -128,4 +128,11 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
     audiomixer: {fileID: 24300002, guid: 37343040db5c41d4ba0a20beb4caadb6, type: 2}
+  - name: Jump
+    clip: {fileID: 8300000, guid: 868ad99a0559de640a6afd46ebc0d3b3, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    audiomixer: {fileID: 24300002, guid: 37343040db5c41d4ba0a20beb4caadb6, type: 2}
   completeLevelUI: {fileID: 0}

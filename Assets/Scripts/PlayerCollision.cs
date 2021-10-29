@@ -44,6 +44,8 @@ public class PlayerCollision : MonoBehaviour
         // if we are jump
 
         rbPlayer.AddForce(Vector3.up * jumpForce);
+
+        FindObjectOfType<AudioManager>().Play("Jump");
     
     }
 
