@@ -357,7 +357,7 @@ MonoBehaviour:
   player: {fileID: 1320601295915284656}
   playerTransform: {fileID: 1320601295915284652}
   material: {fileID: 0}
-  forwardForce: 50
+  forwardForce: 4500
   sidewaysForce: 50
 --- !u!114 &1320601295880935690
 MonoBehaviour:

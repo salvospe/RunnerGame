@@ -19,7 +19,7 @@ public class PauseMenu : MonoBehaviour
     public Slider MasterVolume;
     public Slider SfxVolume;
 
-    void Awake()
+    void Start()
     {
         //getting volume values stored
         MasterVolume.value = PlayerPrefs.GetFloat("MasterVolume", 1);
@@ -30,10 +30,7 @@ public class PauseMenu : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape) && CountdownDone)
         {
-            Debug.Log("pressed");
-            if (GameIsPaused)
-                Resume();
-            else
+            if (!GameIsPaused)
                 Pause();
         }
     }

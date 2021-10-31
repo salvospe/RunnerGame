@@ -40,24 +40,24 @@ public class ShopManager : MonoBehaviour
         shopItems[1, 18] = 18;
 
         //Price
-        shopItems[2, 1] = 1;
-        shopItems[2, 2] = 4;
-        shopItems[2, 3] = 2;
-        shopItems[2, 4] = 3;
-        shopItems[2, 5] = 2;
-        shopItems[2, 6] = 3;
-        shopItems[2, 7] = 4;
-        shopItems[2, 8] = 3;
-        shopItems[2, 9] = 1;
-        shopItems[2, 10] = 2;
-        shopItems[2, 11] = 4;
-        shopItems[2, 12] = 1;
-        shopItems[2, 13] = 3;
-        shopItems[2, 14] = 1;
-        shopItems[2, 15] = 2;
-        shopItems[2, 16] = 6;
-        shopItems[2, 17] = 4;
-        shopItems[2, 18] = 1;
+        shopItems[2, 1] = 18;
+        shopItems[2, 2] = 14;
+        shopItems[2, 3] = 21;
+        shopItems[2, 4] = 22;
+        shopItems[2, 5] = 28;
+        shopItems[2, 6] = 26;
+        shopItems[2, 7] = 16;
+        shopItems[2, 8] = 12;
+        shopItems[2, 9] = 12;
+        shopItems[2, 10] = 16;
+        shopItems[2, 11] = 22;
+        shopItems[2, 12] = 14;
+        shopItems[2, 13] = 10;
+        shopItems[2, 14] = 14;
+        shopItems[2, 15] = 15;
+        shopItems[2, 16] = 22;
+        shopItems[2, 17] = 11;
+        shopItems[2, 18] = 19;
 
 
     }

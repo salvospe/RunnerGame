@@ -73,10 +73,10 @@
     <Compile Include="Assets\Scripts\GemExplosion.cs" />
     <Compile Include="Assets\Scripts\SettingsMenu.cs" />
     <Compile Include="Assets\Art\CameraShakeFX\Scripts\StressReceiver.cs" />
-    <Compile Include="Assets\VolumeSlider.cs" />
+    <Compile Include="Assets\Scripts\VolumeSlider.cs" />
     <Compile Include="Assets\FarlandSkies\Demo\Scripts\Player\SmoothMouseLook.cs" />
     <Compile Include="Assets\Scripts\LevelComplete.cs" />
-    <Compile Include="Assets\JumpingPadScript.cs" />
+    <Compile Include="Assets\Scripts\JumpingPadScript.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\CubeExplosion.cs" />

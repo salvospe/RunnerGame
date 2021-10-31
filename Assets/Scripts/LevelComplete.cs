@@ -6,7 +6,11 @@ public class LevelComplete : MonoBehaviour
 
     public void LoadNextLevel()
     {
-        FindObjectOfType<LevelChanger>().FadeToNextLevel();
+        if(SceneManager.GetActiveScene().buildIndex != 9)
+            FindObjectOfType<LevelChanger>().FadeToNextLevel();
+        else
+            FindObjectOfType<LevelChanger>().FadeToLevel(1);
+
     }
 
 }
