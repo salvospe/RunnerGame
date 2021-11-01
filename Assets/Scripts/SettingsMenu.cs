@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
+using System.Linq;
 public class SettingsMenu : MonoBehaviour
 {
     public AudioMixer Master;
@@ -31,14 +32,12 @@ public class SettingsMenu : MonoBehaviour
         int currentResolutionIndex = 0;
         for(int i=0;i<resolutions.Length; i++)
         {
-            string option = resolutions[i].width + " x " + resolutions[i].height;
+            string option = resolutions[i].width + " x " + resolutions[i].height + "  " + resolutions[i].refreshRate + " Hz";
 
-
-            
-            //if (options.Contains(option)==false)
             options.Add(option);
 
-            if((resolutions[i].width == Screen.currentResolution.width)&& 
+
+            if ((resolutions[i].width == Screen.currentResolution.width)&& 
                 (resolutions[i].height == Screen.currentResolution.height))
             {
                 currentResolutionIndex = i;

@@ -21,6 +21,7 @@ public class PauseMenu : MonoBehaviour
 
     void Start()
     {
+        GameIsPaused = false;
         //getting volume values stored
         MasterVolume.value = PlayerPrefs.GetFloat("MasterVolume", 1);
         SfxVolume.value = PlayerPrefs.GetFloat("SfxVolume", 1);
@@ -32,6 +33,7 @@ public class PauseMenu : MonoBehaviour
         {
             if (!GameIsPaused)
                 Pause();
+
         }
     }
     public void SetVolume(float volume)
